@@ -11,17 +11,27 @@
 
 <body>
 	<div data-role="page">
-		<div data-role="header">我是头部</div>
-		<div role="main" class="ui-content">
-			<form action="#">
-				<label for="textinput-4" class="ui-hidden-accessible">UserName:</label>
-				<input type="text" name="textinput-4" id="textinput-4" placeholder="请输入用户名" value="">
-				<label class="ui-hidden-accessible" for="password">Password:</label>
-				<input type="password" name="password" id="password" placeholder="请输入密码" value="" autocomplete="off">
-				<button class="ui-btn ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all">登录</button>
-			</form>
-		</div>
-		<div data-role="footer" data-position="fixed">我是尾部</div>
+			<div data-role="panel" id="defaultpanel">
+			    <ul data-role="listview">
+			        <li><a href="#">List item 1</a></li>
+			        <li><a href="#">List item 2</a></li>
+			        <li><a href="#">List item 3</a></li>
+			    </ul>
+			</div>
+			<div data-role="header" role="banner">
+				<h1 role="heading" aria-level="1">会员登录</h1>
+				<a href="#defaultpanel" class="ui-btn ui-alt-icon ui-nodisc-icon ui-icon-bullets ui-btn-icon-notext ui-corner-all">分类</a>
+			</div>
+			<div role="main" class="ui-content">
+				<form action="#">
+					<label for="textinput-4" class="ui-hidden-accessible">UserName:</label>
+					<input type="text" name="textinput-4" id="textinput-4" placeholder="请输入用户名" value="">
+					<label class="ui-hidden-accessible" for="password">Password:</label>
+					<input type="password" name="password" id="password" placeholder="请输入密码" value="" autocomplete="off">
+					<button class="ui-btn ui-shadow ui-corner-all">登录</button>
+				</form>
+			</div>
+			<div data-role="footer" data-position="fixed">我是尾部</div>
 	</div>
 </body>
 </html>
